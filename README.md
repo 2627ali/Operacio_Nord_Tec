@@ -1,20 +1,17 @@
 # Operació Nord Tec - Alicia Iamandi - 1A
-## Índex
-## Índex
-- [Operació Nord Tec - Alicia Iamandi - 1A](#operació-nord-tec---alicia-iamandi---1a)
-  - [Índex](#índex)
-  - [Índex](#índex-1)
-  - [Estat del projecte](#estat-del-projecte)
-  - [Arquitectura de xarxa](#arquitectura-de-xarxa)
-  - [Configuracions](#configuracions)
-  - [Incidències i solucions](#incidències-i-solucions)
-    - [Missatge d'error exacte](#missatge-derror-exacte)
-    - [Quan](#quan)
-    - [Causa](#causa)
-    - [Solució](#solució)
-    - [Detectada per...](#detectada-per)
-    - [Decisions tècniques](#decisions-tècniques)
-    - [Reflexions tècniques](#reflexions-tècniques)
+# Índex
+
+- [Estat del projecte](#estat-del-projecte)
+- [Arquitectura de xarxa](#arquitectura-de-xarxa)
+- [Configuracions](#configuracions)
+- [Incidències i solucions](#incidències-i-solucions)
+  - [Missatge d'error exacte](#missatge-derror-exacte)
+  - [Quan](#quan)
+  - [Causa](#causa)
+  - [Solució](#solució)
+  - [Detectada per...](#detectada-per)
+  - [Decisions tècniques](#decisions-tècniques)
+  - [Reflexions tècniques](#reflexions-tècniques)
 
 ## Estat del projecte
 
