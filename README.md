@@ -1,10 +1,18 @@
-# Alicia 
-## Presentació
+# Operació Nord Tec - Alicia Iamandi - 1A
+## Índex
 
-Hola! Em dic **Alicia** i aquest és el meu repositori de pràctica de *Markdown* i GitHub.
-
-En aquesta pràctica he après a utilitzar diferents elements de Markdown i alguns **comandes de Git** per treballar amb repositoris i pujar canvis a GitHub.
-
+- Estat del projecte 
+- Arquitectura de xarxa
+- Configuracions 
+- Incidències i solucions
+  - Missatge d'error exacte
+  - Quan
+  - Causa
+  - Solució
+  - Detectada per...
+  - Decisions tècniques
+  - Reflexions tècniques
+  
 ## Llista ordenada
 ### Passos per pujar un canvi a GitHub
 
