@@ -26,19 +26,23 @@ Aquí explicaré l'arquitectura de xarxa.
 
 Aquí explicaré les configuracions realitzades.
 
-> [!Sugeriment]
->
+> [!NOTE]
+> **Sugeriment**
+> 
 > Abans de modificar una configuració, comprova primer l'estat actual del sistema.
 
 ## Incidències i solucions
 
-> [!Avís]
+> [!WARNING]
+> **Avís**
 >
 > Abans d'aplicar una solució, és important identificar correctament la causa de l'error.
 
-> [!Recordatori]
+> [!NOTE]
+> **Recordatori**
 >
-> Una vegada solucionada la incidència, cal comprovar que el problema no torni a aparèixer
+> Una vegada solucionada la incidència, cal comprovar que el problema no torni a aparèixer.
+
 ### Missatge d'error exacte
 
 Aquí escriuré el missatge d'error.
@@ -63,7 +67,8 @@ Aquí indicaré qui va detectar la incidència.
 
 Aquí explicaré les decisions tècniques preses.
 
-> [!Decisió]
+> [!IMPORTANT]
+> **Decisió**
 >
 > S'ha decidit utilitzar aquesta configuració perquè ...
 
@@ -71,6 +76,7 @@ Aquí explicaré les decisions tècniques preses.
 
 Aquí explicaré les reflexions sobre el problema.
 
-> [!Aprenentatge]
+> [!NOTE]
+> **Aprenentatge**
 >
 > Aquesta incidència m'ha ajudat a entendre que ...
