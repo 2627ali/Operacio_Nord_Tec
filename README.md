@@ -13,16 +13,17 @@
   - Decisions tècniques
   - Reflexions tècniques
   
-## Llista ordenada
-### Passos per pujar un canvi a GitHub
-
-1. Fer els canvis necessaris als fitxers.
-2. Comprovar els canvis amb `git status`.
-3. Afegir els fitxers amb `git add .`.
-4. Fer un commit amb `git commit -m "Nou intent"`.
-5. Pujar els canvis a GitHub amb `git push -u origin main`.
-
-## Llista de tasques
+## Estat del projecte
+## Arquitectura de xarxa
+## Configuracions
+## Incidències i solucions
+### Missatge d'error exacte
+### Quan
+### Causa
+### Solució
+### Detectada per...
+### Decisions tècniques
+### Reflexions tècniques
 
 - [ ] Crear el repositori
 - [ ] Fer canvis al README.md
@@ -73,3 +74,8 @@ Va passar perquè vaig escriure `configuracio` com si fos una comanda, però aqu
 ### Com s'ha resolt?
 
 Vaig comprovar l'error que m'indicava el terminal i vaig tornar a la comanda anterior. Després vaig continuar escrivint les comandes correctament i vaig poder seguir amb la pràctica.
+1. Fer els canvis necessaris als fitxers.
+2. Comprovar els canvis amb `git status`.
+3. Afegir els fitxers amb `git add .`.
+4. Fer un commit amb `git commit -m "Nou intent"`.
+5. Pujar els canvis a GitHub amb `git push -u origin main`.
