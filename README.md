@@ -1,17 +1,33 @@
 # Operació Nord Tec - Alicia Iamandi - 1A
 ## Índex
-
-- ## Estat del projecte 
-- ## Arquitectura de xarxa
-- ## Configuracions 
-- ## Incidències i solucions
-  - ### Missatge d'error exacte
-  - ### Quan
-  - ### Causa
-  - ### Solució
-  - ### Detectada per...
-  - ### Decisions tècniques
-  - ### Reflexions tècniques
+<ul>
+    <li><a href="#estat-projecte">Estat del projecte</a></li>
+    <li><a href="#arquitectura-xarxa">Arquitectura de xarxa</a></li>
+    <li><a href="#configuracions">Configuracions</a></li>
+    <li>
+        <a href="#incidencies">Incidències i solucions</a>
+        <ul>
+            <li><a href="#missatge-error">Missatge d'error exacte</a></li>
+            <li><a href="#quan">Quan</a></li>
+            <li><a href="#causa">Causa</a></li>
+            <li><a href="#solucio">Solució</a></li>
+            <li><a href="#detectada">Detectada per...</a></li>
+            <li><a href="#decisions">Decisions tècniques</a></li>
+            <li><a href="#reflexions">Reflexions tècniques</a></li>
+        </ul>
+    </li>
+</ul>
+- Estat del projecte 
+- Arquitectura de xarxa
+- Configuracions 
+- Incidències i solucions
+  - Missatge d'error exacte
+  - Quan
+  - Causa
+  - Solució
+  - Detectada per...
+  - Decisions tècniques
+  - Reflexions tècniques
   
 ## Estat del projecte
 ## Arquitectura de xarxa
