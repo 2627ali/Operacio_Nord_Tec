@@ -1,4 +1,5 @@
 # Operació Nord Tec - Alicia Iamandi - 1A
+> Documentació tècnica del projecte
 # Índex
 
 - [Estat del projecte](#estat-del-projecte)
@@ -25,8 +26,22 @@ Aquí explicaré l'arquitectura de xarxa.
 
 Aquí explicaré les configuracions realitzades.
 
+> [!TIP]
+> **Suggeriment**
+>
+> Abans de modificar una configuració, comprova primer l'estat actual del sistema.
+
 ## Incidències i solucions
 
+> [!WARNING]
+> **Avís**
+>
+> Abans d'aplicar una solució, és important identificar correctament la causa de l'error.
+
+> [!NOTE]
+> **Recordatori**
+>
+> Una vegada solucionada la incidència, cal comprovar que el problema no torni a aparèixer
 ### Missatge d'error exacte
 
 Aquí escriuré el missatge d'error.
@@ -51,6 +66,16 @@ Aquí indicaré qui va detectar la incidència.
 
 Aquí explicaré les decisions tècniques preses.
 
+> [!IMPORTANT]
+> **Decisió**
+>
+> S'ha decidit utilitzar aquesta configuració perquè ...
+
 ### Reflexions tècniques
 
 Aquí explicaré les reflexions sobre el problema.
+
+> [!NOTE]
+> **Aprenentatge**
+>
+> Aquesta incidència m'ha ajudat a entendre que ...
