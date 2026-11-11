@@ -5,35 +5,35 @@
 # Índex
 
 - [Enllaç](#enllaç)
-- [Estat del projecte](#estat-del-projecte)
-  - [Tasques realitzades](#tasques-realitzades)
-- [Arquitectura de xarxa](#arquitectura-de-xarxa)
-  - [Xarxes utilitzades](#xarxes-utilitzades)
-  - [Interfície de la xarxa:](#interfície-de-la-xarxa)
-- [Configuracions](#configuracions)
-  - [Estructura de carpetes](#estructura-de-carpetes)
-  - [Git i GitHub:](#git-i-github)
-  - [Tallafoc amb iptables](#tallafoc-amb-iptables)
-- [Incidències i solucions](#incidències-i-solucions)
-  - [Incidència 1: Comanda no reconeguda al terminal](#incidència-1-comanda-no-reconeguda-al-terminal)
-    - [Missatge d'error exacte](#missatge-derror-exacte)
-    - [Quan](#quan)
-    - [Causa](#causa)
-    - [Solució](#solució)
-  - [Decisions tècniques](#decisions-tècniques)
-  - [Reflexions tècniques](#reflexions-tècniques)
+- [1. Estat del projecte](#1-estat-del-projecte)
+  - [1.1 Tasques realitzades](#11-tasques-realitzades)
+- [2. Arquitectura de xarxa](#2-arquitectura-de-xarxa)
+  - [2.1 Xarxes utilitzades](#21-xarxes-utilitzades)
+  - [2.2 Interfície de la xarxa:](#22-interfície-de-la-xarxa)
+- [3. Configuracions](#3-configuracions)
+  - [3.1 Estructura de carpetes](#31-estructura-de-carpetes)
+  - [3.2 Git i GitHub:](#32-git-i-github)
+  - [3.3 Tallafoc amb iptables](#33-tallafoc-amb-iptables)
+- [4. Incidències i solucions](#4-incidències-i-solucions)
+  - [4.1 Incidència 1: Comanda no reconeguda al terminal](#41-incidència-1-comanda-no-reconeguda-al-terminal)
+    - [4.1.1 Missatge d'error exacte](#411-missatge-derror-exacte)
+    - [4.1.2 Quan](#412-quan)
+    - [4.1.3 Causa](#413-causa)
+    - [4.1.4 Solució](#414-solució)
+  - [4.2 Decisions tècniques](#42-decisions-tècniques)
+  - [4.3 Reflexions tècniques](#43-reflexions-tècniques)
 
 ## Enllaç
 
 [GitHub](https://github.com/2627ali/README.md.git)
 
-## Estat del projecte
+## 1. Estat del projecte
 
 El projecte Operació NordTec consisteix a realitzar diferents pràctiques relacionades amb la configuració, l'administració i la seguretat de sistemes i xarxes.
 
 Per organitzar i documentar el projecte, s'utilitzen eines com Visual Studio Code, Git i GitHub.
 
-### Tasques realitzades
+### 1.1 Tasques realitzades
 
 - Creació de l'estructura inicial de carpetes del projecte.
 - Instal·lació de Visual Studio Code.
@@ -46,11 +46,11 @@ Per organitzar i documentar el projecte, s'utilitzen eines com Visual Studio Cod
 - Documentació de les pràctiques utilitzant Markdown.
 - Treball amb un script de configuració del tallafoc mitjançant iptables.
 
-## Arquitectura de xarxa
+## 2. Arquitectura de xarxa
 
 En les pràctiques s'han treballat diferents xarxes i interfícies per configurar el tallafoc i gestionar el trànsit de xarxa.
 
-### Xarxes utilitzades
+### 2.1 Xarxes utilitzades
 
 | Xarxa         | Adreça IP                                            |
 | --------------- | -------------------------------------------------- |
@@ -58,14 +58,14 @@ En les pràctiques s'han treballat diferents xarxes i interfícies per configura
 | Xarxa 2 | 192.168.20.0/24               |
 | Xarxa 3    | 10.0.0.0/24        |
 
-### Interfície de la xarxa:
+### 2.2 Interfície de la xarxa:
 
 - enp1s0: utilitzada per a la sortida del trànsit mitjançant NAT.
 - enp3s0: utilitzada per aplicar la redirecció del trànsit HTTP.
 
-## Configuracions
+## 3. Configuracions
 
-### Estructura de carpetes
+### 3.1 Estructura de carpetes
 
 El projecte està organitzat en diferents carpetes per separar els fitxers segons la seva funció:
 
@@ -76,7 +76,7 @@ El projecte està organitzat en diferents carpetes per separar els fitxers segon
 - fitxers XML.
 - fitxers YAML.
 
-### Git i GitHub:
+### 3.2 Git i GitHub:
 
 S'utilitza Git per controlar les versions dels fitxers i GitHub per allotjar el repositori remot.
 
@@ -96,7 +96,7 @@ Desa els canvis en un commit.                |
 Actualitza el repositori local.                    |
 | `git remote -v`      | Mostra els repositoris remots configurats.     |
 
-### Tallafoc amb iptables
+### 3.3 Tallafoc amb iptables
 
 S'ha treballat amb el fitxer firewall.sh, que conté les regles per configurar el tallafoc mitjançant iptables.
 
@@ -112,27 +112,27 @@ Les configuracions treballades inclouen:
 `sudo ./firewall.sh`
 
 
-## Incidències i solucions
+## 4. Incidències i solucions
 
-### Incidència 1: Comanda no reconeguda al terminal
+### 4.1 Incidència 1: Comanda no reconeguda al terminal
 
-#### Missatge d'error exacte
+#### 4.1.1 Missatge d'error exacte
 
 `bash: configuracio: command not found`
 
-#### Quan
+#### 4.1.2 Quan
 
 Durant una pràctica en què estava utilitzant el terminal integrat de Visual Studio Code.
 
-#### Causa
+#### 4.1.3 Causa
 
 Vaig escriure configuracio com si fos una comanda del terminal, però Bash no la reconeixia perquè no és una comanda vàlida.
 
-#### Solució
+#### 4.1.4 Solució
 
 Vaig revisar el missatge d'error, vaig tornar a la comanda anterior i vaig continuar executant les instruccions correctament.
 
-### Decisions tècniques
+### 4.2 Decisions tècniques
 
 1. **Organització per carpetes:** s'ha decidit separar els fitxers segons la seva funció per facilitar-ne la localització i mantenir l'ordre.
 
@@ -144,7 +144,7 @@ Vaig revisar el missatge d'error, vaig tornar a la comanda anterior i vaig conti
 
 5. **Script firewall.sh:** s'ha utilitzat per agrupar les regles d'iptables en un únic fitxer i facilitar-ne l'execució.
 
-### Reflexions tècniques
+### 4.3 Reflexions tècniques
 
 Aquest projecte m'està ajudant a familiaritzar-me amb diferents eines d'administració de sistemes i xarxes.
 
