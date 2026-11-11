@@ -86,13 +86,9 @@ S'utilitza Git per controlar les versions dels fitxers i GitHub per allotjar el 
 | `git init`      | Crea un repositori Git nou.                        |
 | `git status` | Mostra l'estat dels fitxers.               |
 | `git add .`    | Afegeix els canvis per preparar-los per al commit.        |
-| `git commit -m "missatge"`    | 
-
-Desa els canvis en un commit.                |
+| `git commit -m "missatge"`    | Desa els canvis en un commit.                |
 | `git push`     | Puja els canvis del repositori local a GitHub. |
-| `git pull`    | 
-
-Actualitza el repositori local.                    |
+| `git pull`    | Actualitza el repositori local.                    |
 | `git remote -v`      | Mostra els repositoris remots configurats.     |
 
 ### 3.3 Tallafoc amb iptables
