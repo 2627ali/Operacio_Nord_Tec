@@ -4,12 +4,12 @@
 
 # Índex
 
-- [Enllaç](#enllaç)
 - [1. Estat del projecte](#1-estat-del-projecte)
   - [1.1 Tasques realitzades](#11-tasques-realitzades)
 - [2. Arquitectura de xarxa](#2-arquitectura-de-xarxa)
   - [2.1 Xarxes utilitzades](#21-xarxes-utilitzades)
   - [2.2 Interfície de la xarxa:](#22-interfície-de-la-xarxa)
+  - [2.3 Esquema de xarxa](#23-esquema-de-xarxa)
 - [3. Configuracions](#3-configuracions)
   - [3.1 Estructura de carpetes](#31-estructura-de-carpetes)
   - [3.2 Git i GitHub:](#32-git-i-github)
@@ -20,12 +20,9 @@
     - [4.1.2 Quan](#412-quan)
     - [4.1.3 Causa](#413-causa)
     - [4.1.4 Solució](#414-solució)
+    - [4.1.5 Detectada per:](#415-detectada-per)
   - [4.2 Decisions tècniques](#42-decisions-tècniques)
   - [4.3 Reflexions tècniques](#43-reflexions-tècniques)
-
-## Enllaç
-
-[GitHub](https://github.com/2627ali/README.md.git)
 
 ## 1. Estat del projecte
 
@@ -63,6 +60,9 @@ En les pràctiques s'han treballat diferents xarxes i interfícies per configura
 - *enp1s0:* utilitzada per a la sortida del trànsit mitjançant NAT.
 - *enp3s0*: utilitzada per aplicar la redirecció del trànsit HTTP.
 
+### 2.3 Esquema de xarxa
+
+
 ## 3. Configuracions
 
 ### 3.1 Estructura de carpetes
@@ -77,7 +77,7 @@ El projecte està organitzat en diferents carpetes per separar els fitxers segon
 
 ### 3.2 Git i GitHub:
 
-S'utilitza Git per controlar les versions dels fitxers i GitHub per allotjar el repositori remot.
+S'utilitza Git per controlar les versions dels fitxers i GitHub per allotjar el repositori remot. Això permet guardar els canvis, consultar l'historial i mantenir una còpia del projecte en línia.
 
 **Taula de comandes**
 
@@ -127,17 +127,17 @@ Vaig escriure configuracio com si fos una comanda del terminal, però Bash no la
 
 Vaig revisar el missatge d'error, vaig tornar a la comanda anterior i vaig continuar executant les instruccions correctament.
 
+#### 4.1.5 Detectada per:
+
+@AliciaIamandi
+
 ### 4.2 Decisions tècniques
 
-1. **Organització per carpetes:** s'ha decidit separar els fitxers segons la seva funció per facilitar-ne la localització i mantenir l'ordre.
-
-2. **Markdown:** s'ha escollit per documentar el projecte de manera clara i estructurada.
-
-3. **Git:** s'utilitza per controlar les versions i guardar l'historial dels canvis.
-
-4. **GitHub:** s'utilitza per tenir una còpia remota del projecte.
-
-5. **Script firewall.sh:** s'ha utilitzat per agrupar les regles d'iptables en un únic fitxer i facilitar-ne l'execució.
+1. **Organització per carpetes:** s'ha escollit separar els fitxers segons la seva funció per facilitar-ne la localització i mantenir el projecte ordenat. Una alternativa hauria estat guardar tots els fitxers en una mateixa carpeta, però seria més difícil trobar-los.
+2. **Markdown:** s'ha escollit aquest format perquè permet crear documentació clara i estructurada. Una alternativa hauria estat utilitzar un document de text o un processador de textos.
+3. **Git:** s'ha escollit per controlar les versions i guardar un historial dels canvis. Una alternativa hauria estat guardar diferents còpies dels fitxers manualment.
+4. **GitHub:** s'ha escollit per allotjar el repositori remot i tenir una còpia del projecte en línia. Una alternativa hauria estat mantenir únicament el repositori local.
+5. **Script firewall.sh:** s'ha escollit agrupar les regles d'iptables en un únic fitxer per facilitar-ne l'execució i la gestió. Una alternativa hauria estat introduir les regles manualment al terminal una per una.
 
 ### 4.3 Reflexions tècniques
 
@@ -148,4 +148,3 @@ He après la importància de mantenir els fitxers organitzats i documentar els c
 També he entès que Git i GitHub permeten controlar les versions del projecte i mantenir un historial de les modificacions.
 
 Finalment, he après que és important llegir els missatges d'error del terminal, identificar-ne la causa i comprovar que la solució aplicada funciona.
-
