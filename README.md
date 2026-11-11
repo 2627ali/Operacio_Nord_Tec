@@ -4,29 +4,28 @@
 
 # Índex
 
+- [Enllaç](#enllaç)
 - [Estat del projecte](#estat-del-projecte)
   - [Tasques realitzades](#tasques-realitzades)
 - [Arquitectura de xarxa](#arquitectura-de-xarxa)
   - [Xarxes utilitzades](#xarxes-utilitzades)
+  - [Interfície de la xarxa:](#interfície-de-la-xarxa)
 - [Configuracions](#configuracions)
+  - [Estructura de carpetes](#estructura-de-carpetes)
+  - [Git i GitHub:](#git-i-github)
+  - [Tallafoc amb iptables](#tallafoc-amb-iptables)
 - [Incidències i solucions](#incidències-i-solucions)
-  - [Missatge d'error exacte](#missatge-derror-exacte)
-  - [Quan](#quan)
-  - [Causa](#causa)
-  - [Solució](#solució)
-  - [Detectada per...](#detectada-per)
+  - [Incidència 1: Comanda no reconeguda al terminal](#incidència-1-comanda-no-reconeguda-al-terminal)
+    - [Missatge d'error exacte](#missatge-derror-exacte)
+    - [Quan](#quan)
+    - [Causa](#causa)
+    - [Solució](#solució)
   - [Decisions tècniques](#decisions-tècniques)
   - [Reflexions tècniques](#reflexions-tècniques)
-- [Llista ordenada](#llista-ordenada)
-  - [Passos per pujar un canvi a GitHub](#passos-per-pujar-un-canvi-a-github)
-- [Llista de tasques](#llista-de-tasques)
-- [Enllaç](#enllaç)
-- [Bloc de codi](#bloc-de-codi)
-- [Taula de comandes](#taula-de-comandes)
-- [Incidències](#incidències)
-  - [Què va passar?](#què-va-passar)
-  - [Per què?](#per-què)
-  - [Com s'ha resolt?](#com-sha-resolt)
+
+## Enllaç
+
+[GitHub](https://github.com/2627ali/README.md.git)
 
 ## Estat del projecte
 
@@ -59,122 +58,99 @@ En les pràctiques s'han treballat diferents xarxes i interfícies per configura
 | Xarxa 2 | 192.168.20.0/24               |
 | Xarxa 3    | 10.0.0.0/24        |
 
+### Interfície de la xarxa:
+
+- enp1s0: utilitzada per a la sortida del trànsit mitjançant NAT.
+- enp3s0: utilitzada per aplicar la redirecció del trànsit HTTP.
+
 ## Configuracions
 
-Aquí explicaré les configuracions realitzades.
+### Estructura de carpetes
 
-> [!NOTE]
-> **Sugeriment**
-> 
-> Abans de modificar una configuració, comprova primer l'estat actual del sistema.
+El projecte està organitzat en diferents carpetes per separar els fitxers segons la seva funció:
+
+- documentació.
+
+- fitxers d'infraestructura.
+- recursos del projecte.
+- fitxers XML.
+- fitxers YAML.
+
+### Git i GitHub:
+
+S'utilitza Git per controlar les versions dels fitxers i GitHub per allotjar el repositori remot.
+
+> Taula de comandes
+
+| Comanda         | Funció                                            |
+| --------------- | -------------------------------------------------- |
+| `git init`      | Crea un repositori Git nou.                        |
+| `git status` | Mostra l'estat dels fitxers.               |
+| `git add .`    | Afegeix els canvis per preparar-los per al commit.        |
+| `git commit -m "missatge"`    | 
+
+Desa els canvis en un commit.                |
+| `git push`     | Puja els canvis del repositori local a GitHub. |
+| `git pull`    | 
+
+Actualitza el repositori local.                    |
+| `git remote -v`      | Mostra els repositoris remots configurats.     |
+
+### Tallafoc amb iptables
+
+S'ha treballat amb el fitxer firewall.sh, que conté les regles per configurar el tallafoc mitjançant iptables.
+
+Les configuracions treballades inclouen:
+
+- Neteja de les regles anteriors.
+- Configuració de les polítiques per defecte.
+- Regles MASQUERADE per a les xarxes internes.
+- Regla DNAT per redirigir el trànsit HTTP cap a 192.168.10.10.
+
+**Per executar l'script:**
+
+`sudo ./firewall.sh`
+
 
 ## Incidències i solucions
 
-> [!WARNING]
-> **Avís**
->
-> Abans d'aplicar una solució, és important identificar correctament la causa de l'error.
+### Incidència 1: Comanda no reconeguda al terminal
 
-> [!NOTE]
-> **Recordatori**
->
-> Una vegada solucionada la incidència, cal comprovar que el problema no torni a aparèixer.
+#### Missatge d'error exacte
 
-### Missatge d'error exacte
+`bash: configuracio: command not found`
 
-Aquí escriuré el missatge d'error.
+#### Quan
 
-### Quan
+Durant una pràctica en què estava utilitzant el terminal integrat de Visual Studio Code.
 
-Aquí explicaré quan va passar.
+#### Causa
 
-### Causa
+Vaig escriure configuracio com si fos una comanda del terminal, però Bash no la reconeixia perquè no és una comanda vàlida.
 
-Aquí explicaré la causa de l'error.
+#### Solució
 
-### Solució
-
-Aquí explicaré com es va solucionar.
-
-### Detectada per...
-
-Aquí indicaré qui va detectar la incidència.
+Vaig revisar el missatge d'error, vaig tornar a la comanda anterior i vaig continuar executant les instruccions correctament.
 
 ### Decisions tècniques
 
-Aquí explicaré les decisions tècniques preses.
+1. **Organització per carpetes:** s'ha decidit separar els fitxers segons la seva funció per facilitar-ne la localització i mantenir l'ordre.
 
-> [!IMPORTANT]
-> **Decisió**
->
-> S'ha decidit utilitzar aquesta configuració perquè ...
+2. **Markdown:** s'ha escollit per documentar el projecte de manera clara i estructurada.
+
+3. **Git:** s'utilitza per controlar les versions i guardar l'historial dels canvis.
+
+4. **GitHub:** s'utilitza per tenir una còpia remota del projecte.
+
+5. **Script firewall.sh:** s'ha utilitzat per agrupar les regles d'iptables en un únic fitxer i facilitar-ne l'execució.
 
 ### Reflexions tècniques
 
-Aquí explicaré les reflexions sobre el problema.
+Aquest projecte m'està ajudant a familiaritzar-me amb diferents eines d'administració de sistemes i xarxes.
 
-> [!NOTE]
-> **Aprenentatge**
->
-> Aquesta incidència m'ha ajudat a entendre que ...
+He après la importància de mantenir els fitxers organitzats i documentar els canvis que es fan durant les pràctiques.
 
-## Llista ordenada
-### Passos per pujar un canvi a GitHub
+També he entès que Git i GitHub permeten controlar les versions del projecte i mantenir un historial de les modificacions.
 
-1. Fer els canvis necessaris als fitxers.
-2. Comprovar els canvis amb `git status`.
-3. Afegir els fitxers amb `git add .`.
-4. Fer un commit amb `git commit -m "Nou intent"`.
-5. Pujar els canvis a GitHub amb `git push -u origin main`.
+Finalment, he après que és important llegir els missatges d'error del terminal, identificar-ne la causa i comprovar que la solució aplicada funciona.
 
-## Llista de tasques
-
-- [ ] Crear el repositori
-- [ ] Fer canvis al README.md
-- [ ] Fer el commit dels canvis
-- [ ] Pujar els canvis a GitHub
-
-## Enllaç
-
-[GitHub](https://github.com/2627ali/README.md.git)
-
-## Bloc de codi
-
-```
-git init
-git --version
-git status
-git branch
-git commit -m ""
-git remote add origin
-git push -u origin main
-git add .
-git commit -m "Nou intent"
-git push -u origin main 
-```
-
-## Taula de comandes
-
-| Comanda         | Què fa?                                            |
-| --------------- | -------------------------------------------------- |
-| `git init`      | Crea un repositori Git nou.                        |
-| `git --version` | Mostra la versió de Git instal·lada.               |
-| `git status`    | Mostra l'estat dels fitxers del repositori.        |
-| `git branch`    | Mostra les branques del repositori.                |
-| `git add .`     | Afegeix els canvis per preparar-los per al commit. |
-| `git commit`    | Guarda els canvis en un commit.                    |
-| `git push`      | Puja els canvis del repositori local a GitHub.     |
-
-## Incidències 
-
-### Què va passar?
-
-Quan estava treballant amb el terminal de VS Code, vaig escriure una comanda incorrectament i em va aparèixer el missatge `bash: configuracio: command not found`.
-
-### Per què?
-
-Va passar perquè vaig escriure `configuracio` com si fos una comanda, però aquesta comanda no existeix i Bash no la va poder reconèixer.
-
-### Com s'ha resolt?
-
-Vaig comprovar l'error que m'indicava el terminal i vaig tornar a la comanda anterior. Després vaig continuar escrivint les comandes correctament i vaig poder seguir amb la pràctica.
