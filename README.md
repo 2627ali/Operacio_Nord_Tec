@@ -1,9 +1,13 @@
 # Operació Nord Tec - Alicia Iamandi - 1A
 > Documentació tècnica del projecte
+
+
 # Índex
 
 - [Estat del projecte](#estat-del-projecte)
+  - [Tasques realitzades](#tasques-realitzades)
 - [Arquitectura de xarxa](#arquitectura-de-xarxa)
+  - [Xarxes utilitzades](#xarxes-utilitzades)
 - [Configuracions](#configuracions)
 - [Incidències i solucions](#incidències-i-solucions)
   - [Missatge d'error exacte](#missatge-derror-exacte)
@@ -26,11 +30,34 @@
 
 ## Estat del projecte
 
-Aquí explicaré l'estat actual del projecte.
+El projecte Operació NordTec consisteix a realitzar diferents pràctiques relacionades amb la configuració, l'administració i la seguretat de sistemes i xarxes.
+
+Per organitzar i documentar el projecte, s'utilitzen eines com Visual Studio Code, Git i GitHub.
+
+### Tasques realitzades
+
+- Creació de l'estructura inicial de carpetes del projecte.
+- Instal·lació de Visual Studio Code.
+- Instal·lació de les extensions Markdown All in One, Markdown Preview Enhanced i Material Icon Theme
+- Instal·lació de Git i comprovació de la seva versió.
+- Creació del fitxer README.md.
+- Creació i configuració del repositori Git.
+- Connexió del repositori local amb GitHub.
+- Pràctica de les comandes bàsiques de Git.
+- Documentació de les pràctiques utilitzant Markdown.
+- Treball amb un script de configuració del tallafoc mitjançant iptables.
 
 ## Arquitectura de xarxa
 
-Aquí explicaré l'arquitectura de xarxa.
+En les pràctiques s'han treballat diferents xarxes i interfícies per configurar el tallafoc i gestionar el trànsit de xarxa.
+
+### Xarxes utilitzades
+
+| Xarxa         | Adreça IP                                            |
+| --------------- | -------------------------------------------------- |
+| Xarxa 1      | 192.168.10.0/24                        |
+| Xarxa 2 | 192.168.20.0/24               |
+| Xarxa 3    | 10.0.0.0/24        |
 
 ## Configuracions
 
