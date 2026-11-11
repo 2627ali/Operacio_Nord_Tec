@@ -60,8 +60,8 @@ En les pràctiques s'han treballat diferents xarxes i interfícies per configura
 
 ### 2.2 Interfície de la xarxa:
 
-- enp1s0: utilitzada per a la sortida del trànsit mitjançant NAT.
-- enp3s0: utilitzada per aplicar la redirecció del trànsit HTTP.
+- *enp1s0:* utilitzada per a la sortida del trànsit mitjançant NAT.
+- *enp3s0*: utilitzada per aplicar la redirecció del trànsit HTTP.
 
 ## 3. Configuracions
 
@@ -70,7 +70,6 @@ En les pràctiques s'han treballat diferents xarxes i interfícies per configura
 El projecte està organitzat en diferents carpetes per separar els fitxers segons la seva funció:
 
 - documentació.
-
 - fitxers d'infraestructura.
 - recursos del projecte.
 - fitxers XML.
@@ -80,15 +79,14 @@ El projecte està organitzat en diferents carpetes per separar els fitxers segon
 
 S'utilitza Git per controlar les versions dels fitxers i GitHub per allotjar el repositori remot.
 
-> Taula de comandes
+**Taula de comandes**
 
-| Comanda         | Funció                                            |
+| **Comanda**         | **Funció**                                            |
 | --------------- | -------------------------------------------------- |
 | `git init`      | Crea un repositori Git nou.                        |
 | `git status` | Mostra l'estat dels fitxers.               |
 | `git add .`    | Afegeix els canvis per preparar-los per al commit.        |
 | `git commit -m "missatge"`    | 
-
 Desa els canvis en un commit.                |
 | `git push`     | Puja els canvis del repositori local a GitHub. |
 | `git pull`    | 
